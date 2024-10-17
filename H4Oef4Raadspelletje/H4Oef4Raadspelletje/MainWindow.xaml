@@ -1,0 +1,15 @@
+﻿<Window x:Class="H4Oef4Raadspelletje.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:H4Oef4Raadspelletje"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Raad zo snel mogelijk het willekeurig getal tussen 0 en 100." HorizontalAlignment="Left" Height="48" Margin="67,104,0,0" VerticalAlignment="Top" Width="640" FontSize="22" Foreground="#FFFF976A" FontWeight="Bold"/>
+        <Button x:Name="startButton" Content="Start" HorizontalAlignment="Left" Height="49" Margin="164,217,0,0" VerticalAlignment="Top" Width="171" FontSize="20" Click="startButton_Click"/>
+        <Button x:Name="closeButton" Content="Sluiten" HorizontalAlignment="Left" Height="49" Margin="477,217,0,0" VerticalAlignment="Top" Width="171" FontSize="20" Click="closeButton_Click"/>
+
+    </Grid>
+</Window>
