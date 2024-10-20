@@ -21,19 +21,22 @@ namespace H4Oef4Raadspelletje
         public MainWindow()
         {
             InitializeComponent();
+            randomNumber = rnd.Next(1, 101);
         }
 
-        private void closeButton_Click(object sender, RoutedEventArgs e)
+        Random rnd = new Random();
+        int number = 0;
+        int amountOfGuesses = 0;
+        int randomNumber;
+
+        private void endButton_Click(object sender, RoutedEventArgs e)
         {
             Close();
         }
 
         private void startButton_Click(object sender, RoutedEventArgs e)
         {
-
-
-
-
+            
             /*
             string inputNumber = numberTextBox.Text;
             bool isInputNumberValid = int.TryParse(inputNumber, out number);
@@ -55,12 +58,14 @@ namespace H4Oef4Raadspelletje
                 }
                 amountOfGuesses++;
                 output2TextBox.Text = $"Aantal keer geraden: {amountOfGuesses}";
+                numberTextBox.Focus();
             }
             else
             {
                 output1TextBox.Text = "Geef een getal in tussen 1 en 100";
                 output2TextBox.Text = "Geef een getal in tussen 1 en 100";
                 numberTextBox.Focus();
+                numberTextBox.Clear();
             }
             */
         }
